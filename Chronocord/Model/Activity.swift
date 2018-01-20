@@ -25,9 +25,34 @@ enum ActivityCategory {
     case Sleep
     case Social
     case Travel
+    case Untracked
     case Wasted
     case Work
 }
+
+
+/// Each activity should be a discreet object such that once created, is just passed
+/// on, without ever changing.
+class Activity {
+    
+    // MARK: - Variables
+    
+    let name:                   String
+    let colour:                 UIColor
+    let category:               ActivityCategory
+    
+    
+    // MARK: - Initializer
+    
+    init(name: String, colour: UIColor, category: ActivityCategory) {
+        self.name               = name
+        self.colour             = colour
+        self.category           = category
+    }
+}
+
+
+// MARK: - Default activities
 
 class DefaultActivities {
     static let chores           = Activity(name: Constants.ActivityNames.chores,
@@ -36,19 +61,13 @@ class DefaultActivities {
     static let downtime         = Activity(name: Constants.ActivityNames.downtime,
                                            colour: StandardColours.downtime,
                                            category: .Downtime)
+    static let exercise         = Activity(name: Constants.ActivityNames.exercise,
+                                           colour: StandardColours.exercise,
+                                           category: .Exercise)
     static let sleep            = Activity(name: Constants.ActivityNames.sleep,
                                            colour: StandardColours.sleep,
                                            category: .Sleep)
-}
-
-class Activity {
-    var name:                   String
-    var colour:                 UIColor
-    var category:               ActivityCategory
-    
-    init(name: String, colour: UIColor, category: ActivityCategory) {
-        self.name               = name
-        self.colour             = colour
-        self.category           = category
-    }
+    static let untracked        = Activity(name: Constants.ActivityNames.untracked,
+                                           colour: StandardColours.primaryGrey,
+                                           category: .Untracked)
 }

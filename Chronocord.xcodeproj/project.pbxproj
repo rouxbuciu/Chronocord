@@ -17,6 +17,10 @@
 		12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AA201367F000A60FD5 /* TimeChunk.swift */; };
 		12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AC2013684800A60FD5 /* Activity.swift */; };
 		12E8E7AF20136A2F00A60FD5 /* StandardColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */; };
+		12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B02013870100A60FD5 /* DayInfo.swift */; };
+		12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B2201396B100A60FD5 /* UserPreferences.swift */; };
+		12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */; };
+		12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B620139D2900A60FD5 /* JSONConverter.swift */; };
 		3BBC193CAB224FD3DB87B2C8 /* Pods_Chronocord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,6 +38,10 @@
 		12E8E7AA201367F000A60FD5 /* TimeChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChunk.swift; sourceTree = "<group>"; };
 		12E8E7AC2013684800A60FD5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardColors.swift; sourceTree = "<group>"; };
+		12E8E7B02013870100A60FD5 /* DayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfo.swift; sourceTree = "<group>"; };
+		12E8E7B2201396B100A60FD5 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
+		12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		12E8E7B620139D2900A60FD5 /* JSONConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverter.swift; sourceTree = "<group>"; };
 		57C625A75FA7DC5958EC484B /* Pods-Chronocord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chronocord.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chronocord/Pods-Chronocord.release.xcconfig"; sourceTree = "<group>"; };
 		DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chronocord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +96,7 @@
 			children = (
 				12E8E7AA201367F000A60FD5 /* TimeChunk.swift */,
 				12E8E7AC2013684800A60FD5 /* Activity.swift */,
+				12E8E7B02013870100A60FD5 /* DayInfo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -114,6 +123,9 @@
 			children = (
 				12E8E7A62012E5A000A60FD5 /* Constants.swift */,
 				12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */,
+				12E8E7B2201396B100A60FD5 /* UserPreferences.swift */,
+				12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */,
+				12E8E7B620139D2900A60FD5 /* JSONConverter.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -292,6 +304,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */,
+				12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */,
+				12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */,
+				12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */,
+				12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */,
 				12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */,
 				12E8E78F2012D79200A60FD5 /* ViewController.swift in Sources */,
 				12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */,
