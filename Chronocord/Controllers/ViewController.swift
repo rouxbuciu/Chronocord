@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
                 
-        Analytics.setScreenName("Screen name", screenClass: "Screen class")
+//        Analytics.setScreenName("Screen name", screenClass: "Screen class")
     }
 
     override func didReceiveMemoryWarning() {

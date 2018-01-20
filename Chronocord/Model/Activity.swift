@@ -29,7 +29,7 @@ enum ActivityCategory {
     case Work
 }
 
-struct DefaultActivities {
+class DefaultActivities {
     static let chores           = Activity(name: Constants.ActivityNames.chores,
                                            colour: StandardColours.chores,
                                            category: .Chores)
@@ -41,7 +41,7 @@ struct DefaultActivities {
                                            category: .Sleep)
 }
 
-struct Activity {
+class Activity {
     var name:                   String
     var colour:                 UIColor
     var category:               ActivityCategory
