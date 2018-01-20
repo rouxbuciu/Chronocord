@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+//        Analytics.logEvent(Constants.AnalyticEvents.Login.loginViewPresented,
+//                           parameters: nil)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+                
+        Analytics.setScreenName("Screen name", screenClass: "Screen class")
     }
 
     override func didReceiveMemoryWarning() {

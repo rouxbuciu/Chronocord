@@ -1,0 +1,6 @@
+framework module Pods_Chronocord {
+  umbrella header "Pods-Chronocord-umbrella.h"
+
+  export *
+  module * { export * }
+}
