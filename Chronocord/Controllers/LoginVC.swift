@@ -68,11 +68,17 @@ class LoginVC: UIViewController {
     }
 
     @IBAction func showDisclaimerButtonTapped(_ sender: Any) {
+        disclaimerButton.isUserInteractionEnabled = false
         showDisclaimerElementsAnimation()
+        disclaimerDismissOutside.isUserInteractionEnabled = true
+        disclaimerDismissInside.isUserInteractionEnabled = true
     }
     
     @IBAction func hideDisclaimerButtonTapped(_ sender: Any) {
+        disclaimerDismissOutside.isUserInteractionEnabled = false
+        disclaimerDismissInside.isUserInteractionEnabled = false
         hideDisclaimerElementsAnimation()
+        disclaimerButton.isUserInteractionEnabled = true
     }
     
     

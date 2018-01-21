@@ -43,11 +43,12 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJP-Cy-WTz" customClass="UnderlinedLabel" customModule="Chronocord" customModuleProvider="target">
                                 <rect key="frame" x="172" y="908" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RyH-NL-2vj">
-                                <rect key="frame" x="0.66666666666665719" y="5" width="375" height="812"/>
+                                <rect key="frame" x="-49.333333333333343" y="-45" width="475" height="912"/>
                                 <connections>
                                     <action selector="hideDisclaimerButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eHO-Ji-8mi"/>
                                 </connections>
@@ -106,7 +107,7 @@
                         <constraints>
                             <constraint firstItem="g0y-WN-Qwa" firstAttribute="centerY" secondItem="uJP-Cy-WTz" secondAttribute="centerY" id="0m6-xl-9gk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IfX-OH-I7T" secondAttribute="bottom" constant="-100" id="71J-td-bPj"/>
-                            <constraint firstItem="RyH-NL-2vj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="79U-o9-NUe"/>
+                            <constraint firstItem="RyH-NL-2vj" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="100" id="79U-o9-NUe"/>
                             <constraint firstItem="vXg-hA-TrB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7ni-Nm-VEY"/>
                             <constraint firstItem="uJP-Cy-WTz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ge9-lr-K1o"/>
                             <constraint firstItem="IfX-OH-I7T" firstAttribute="bottom" secondItem="uJP-Cy-WTz" secondAttribute="top" constant="-30" id="Jux-gL-vHs"/>
@@ -121,7 +122,7 @@
                             <constraint firstItem="jKG-ed-qad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o74-uk-1C6"/>
                             <constraint firstItem="g0y-WN-Qwa" firstAttribute="width" secondItem="uJP-Cy-WTz" secondAttribute="width" id="u8H-PE-thj"/>
                             <constraint firstItem="IfX-OH-I7T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uJG-og-cw1"/>
-                            <constraint firstItem="RyH-NL-2vj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="z8C-xE-0IF"/>
+                            <constraint firstItem="RyH-NL-2vj" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="100" id="z8C-xE-0IF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
