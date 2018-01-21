@@ -21,6 +21,7 @@
 		12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B2201396B100A60FD5 /* UserPreferences.swift */; };
 		12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */; };
 		12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B620139D2900A60FD5 /* JSONConverter.swift */; };
+		12E8E7B92014328E00A60FD5 /* BEYNO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7B82014328E00A60FD5 /* BEYNO.otf */; };
 		3BBC193CAB224FD3DB87B2C8 /* Pods_Chronocord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		12E8E7B2201396B100A60FD5 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		12E8E7B620139D2900A60FD5 /* JSONConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverter.swift; sourceTree = "<group>"; };
+		12E8E7B82014328E00A60FD5 /* BEYNO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.otf; sourceTree = "<group>"; };
 		57C625A75FA7DC5958EC484B /* Pods-Chronocord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chronocord.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chronocord/Pods-Chronocord.release.xcconfig"; sourceTree = "<group>"; };
 		DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chronocord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +135,7 @@
 		12E8E7A22012D99A00A60FD5 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				12E8E7B82014328E00A60FD5 /* BEYNO.otf */,
 				12E8E7932012D79200A60FD5 /* Assets.xcassets */,
 			);
 			path = Assets;
@@ -225,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E8E7B92014328E00A60FD5 /* BEYNO.otf in Resources */,
 				12E8E7972012D79200A60FD5 /* LaunchScreen.storyboard in Resources */,
 				12E8E7A52012E23700A60FD5 /* GoogleService-Info.plist in Resources */,
 				12E8E7942012D79200A60FD5 /* Assets.xcassets in Resources */,

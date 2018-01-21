@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="BEYNO.otf">
+            <string>BEYNO</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--LoginVC-->
         <scene sceneID="tne-QT-ifu">
@@ -18,30 +23,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="jKG-ed-qad">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appLogo" translatesAutoresizingMaskIntoConstraints="NO" id="jKG-ed-qad">
                                 <rect key="frame" x="122.5" y="278.5" width="130" height="130"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="130" id="1zZ-Z3-6xd"/>
                                     <constraint firstAttribute="height" constant="130" id="nGc-vf-72v"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHRONOCORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="25" translatesAutoresizingMaskIntoConstraints="NO" id="IvH-vv-fbJ">
+                                <rect key="frame" x="26" y="321" width="324.5" height="45"/>
+                                <fontDescription key="fontDescription" name="BEYNO" family="BEYNO" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfX-OH-I7T">
+                                <rect key="frame" x="62" y="717" width="250" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.36078431372549019" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="96L-0B-15J"/>
+                                    <constraint firstAttribute="width" constant="250" id="GeA-JK-Eyj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="LOGIN WITH FACEBOOK">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.25882352939999997" green="0.25882352939999997" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="IvH-vv-fbJ" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3ZH-Zi-pak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IfX-OH-I7T" secondAttribute="bottom" constant="-100" id="71J-td-bPj"/>
                             <constraint firstItem="jKG-ed-qad" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="cJK-Pa-XwM"/>
                             <constraint firstItem="jKG-ed-qad" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="o74-uk-1C6"/>
+                            <constraint firstItem="IfX-OH-I7T" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uJG-og-cw1"/>
+                            <constraint firstItem="IvH-vv-fbJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="wkm-yK-fWl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="appTitle" destination="IvH-vv-fbJ" id="ISi-Ph-as0"/>
+                        <outlet property="facebookButton" destination="IfX-OH-I7T" id="G7k-yn-yFV"/>
                         <outlet property="icon" destination="jKG-ed-qad" id="bbY-Il-iZl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="31.934032983508249"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon" width="512" height="512"/>
+        <image name="appLogo" width="512" height="512"/>
     </resources>
 </document>
