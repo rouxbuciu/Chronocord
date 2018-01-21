@@ -56,18 +56,18 @@ class Activity {
 
 class DefaultActivities {
     static let chores           = Activity(name: Constants.ActivityNames.chores,
-                                           colour: StandardColours.Activity.chores,
+                                           colour: DesignConstants.Colours.Activity.chores,
                                            category: .Chores)
     static let downtime         = Activity(name: Constants.ActivityNames.downtime,
-                                           colour: StandardColours.Activity.downtime,
+                                           colour: DesignConstants.Colours.Activity.downtime,
                                            category: .Downtime)
     static let exercise         = Activity(name: Constants.ActivityNames.exercise,
-                                           colour: StandardColours.Activity.exercise,
+                                           colour: DesignConstants.Colours.Activity.exercise,
                                            category: .Exercise)
     static let sleep            = Activity(name: Constants.ActivityNames.sleep,
-                                           colour: StandardColours.Activity.sleep,
+                                           colour: DesignConstants.Colours.Activity.sleep,
                                            category: .Sleep)
     static let untracked        = Activity(name: Constants.ActivityNames.untracked,
-                                           colour: StandardColours.UI.primaryGrey,
+                                           colour: DesignConstants.Colours.UI.primaryGrey,
                                            category: .Untracked)
 }

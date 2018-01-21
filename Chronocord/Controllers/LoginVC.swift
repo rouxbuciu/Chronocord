@@ -14,9 +14,13 @@ class LoginVC: UIViewController {
     // MARK: - Outlets
     
     @IBOutlet weak var icon: UIImageView!
-    @IBOutlet weak var appTitle: UILabel!
     @IBOutlet weak var facebookButton: UIButton!
+    @IBOutlet weak var disclaimerLabel: UILabel!
     
+    
+    // MARK: - Variables
+    
+    private var appTitle: ShineLabel!
 
     // MARK: - View lifecycle
     
@@ -25,9 +29,8 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
 //        Analytics.logEvent(Constants.AnalyticEvents.Login.loginViewPresented,
 //                           parameters: nil)
-        
-        appTitle.textColor = StandardColours.UI.primaryTeal
-        facebookButton.layer.cornerRadius = 10.0
+        setUpAppTitleLabel()
+        setUpFacebookButton()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -37,8 +40,8 @@ class LoginVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        introAnimation()
 //        Analytics.setScreenName("Screen name", screenClass: "Screen class")
+        introAnimation()
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,8 +56,28 @@ class LoginVC: UIViewController {
     
     // MARK: - Private methods
     
+    private func setUpAppTitleLabel() {
+        appTitle = ShineLabel(frame: CGRect(x: 0,
+                                            y: 0,
+                                            width: self.view.bounds.width - 20,
+                                            height: 100))
+        appTitle.numberOfLines = 1
+        appTitle.text = "CHRONOCORD"
+        appTitle.font = DesignConstants.UIElements.headerFont
+        appTitle.textColor = DesignConstants.Colours.UI.primaryTeal
+        appTitle.textAlignment = .center
+        appTitle.center.x = self.view.center.x
+        appTitle.center.y = self.view.center.y
+        self.view.addSubview(appTitle)
+    }
+    
+    private func setUpFacebookButton() {
+        facebookButton.layer.cornerRadius = 10.0
+        facebookButton.setTitle(TextConstants.loginViewText.facebookButton, for: .normal)
+        facebookButton.backgroundColor = DesignConstants.Colours.UI.facebookBlue
+    }
+    
     private func prepareUIForAnimations() {
-        appTitle.alpha = 0.0
         icon.alpha = 1.0
     }
 
@@ -71,9 +94,8 @@ class LoginVC: UIViewController {
     }
     
     private func showTitleAnimation() {
-        UIView.animate(withDuration: 2.3, delay: 0.6,  animations: {
-            self.appTitle.alpha = 1.0
-        }) { (true) in
+        appTitle.shineDuration = 3.0
+        appTitle.shineWithCompletion {
             self.raiseTitleAnimation()
             self.showButtonAnimation()
         }
@@ -86,7 +108,7 @@ class LoginVC: UIViewController {
         })
         
         UIView.animate(withDuration: 2.0, delay: 0.2, animations: {
-            self.appTitle.center.y -= heightAdjustment - 10
+            self.appTitle.center.y -= heightAdjustment - 20
         })
     }
     

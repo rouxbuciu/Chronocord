@@ -13,15 +13,16 @@
 		12E8E7942012D79200A60FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7932012D79200A60FD5 /* Assets.xcassets */; };
 		12E8E7972012D79200A60FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7952012D79200A60FD5 /* LaunchScreen.storyboard */; };
 		12E8E7A52012E23700A60FD5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7A42012E23700A60FD5 /* GoogleService-Info.plist */; };
-		12E8E7A72012E5A000A60FD5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7A62012E5A000A60FD5 /* Constants.swift */; };
+		12E8E7A72012E5A000A60FD5 /* TextConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7A62012E5A000A60FD5 /* TextConstants.swift */; };
 		12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AA201367F000A60FD5 /* TimeChunk.swift */; };
 		12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AC2013684800A60FD5 /* Activity.swift */; };
-		12E8E7AF20136A2F00A60FD5 /* StandardColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */; };
+		12E8E7AF20136A2F00A60FD5 /* DesignConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7AE20136A2F00A60FD5 /* DesignConstants.swift */; };
 		12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B02013870100A60FD5 /* DayInfo.swift */; };
 		12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B2201396B100A60FD5 /* UserPreferences.swift */; };
 		12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */; };
 		12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7B620139D2900A60FD5 /* JSONConverter.swift */; };
 		12E8E7B92014328E00A60FD5 /* BEYNO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7B82014328E00A60FD5 /* BEYNO.otf */; };
+		12E8E7BD2014D6B600A60FD5 /* ShineLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E7BC2014D6B600A60FD5 /* ShineLabel.swift */; };
 		3BBC193CAB224FD3DB87B2C8 /* Pods_Chronocord.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,15 +36,16 @@
 		12E8E7962012D79200A60FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E8E7982012D79200A60FD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12E8E7A42012E23700A60FD5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		12E8E7A62012E5A000A60FD5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		12E8E7A62012E5A000A60FD5 /* TextConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextConstants.swift; sourceTree = "<group>"; };
 		12E8E7AA201367F000A60FD5 /* TimeChunk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChunk.swift; sourceTree = "<group>"; };
 		12E8E7AC2013684800A60FD5 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
-		12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardColors.swift; sourceTree = "<group>"; };
+		12E8E7AE20136A2F00A60FD5 /* DesignConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignConstants.swift; sourceTree = "<group>"; };
 		12E8E7B02013870100A60FD5 /* DayInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfo.swift; sourceTree = "<group>"; };
 		12E8E7B2201396B100A60FD5 /* UserPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferences.swift; sourceTree = "<group>"; };
 		12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 		12E8E7B620139D2900A60FD5 /* JSONConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONConverter.swift; sourceTree = "<group>"; };
 		12E8E7B82014328E00A60FD5 /* BEYNO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEYNO.otf; sourceTree = "<group>"; };
+		12E8E7BC2014D6B600A60FD5 /* ShineLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShineLabel.swift; sourceTree = "<group>"; };
 		57C625A75FA7DC5958EC484B /* Pods-Chronocord.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chronocord.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chronocord/Pods-Chronocord.release.xcconfig"; sourceTree = "<group>"; };
 		DA4FD56AC6E0E4EC34C4B9BB /* Pods_Chronocord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chronocord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -89,6 +91,7 @@
 				12E8E79F2012D97200A60FD5 /* Views */,
 				12E8E7982012D79200A60FD5 /* Info.plist */,
 				12E8E7A42012E23700A60FD5 /* GoogleService-Info.plist */,
+				12E8E7BB2014D16600A60FD5 /* Supporting Files */,
 			);
 			path = Chronocord;
 			sourceTree = "<group>";
@@ -123,11 +126,12 @@
 		12E8E7A12012D98400A60FD5 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				12E8E7A62012E5A000A60FD5 /* Constants.swift */,
-				12E8E7AE20136A2F00A60FD5 /* StandardColors.swift */,
+				12E8E7A62012E5A000A60FD5 /* TextConstants.swift */,
+				12E8E7AE20136A2F00A60FD5 /* DesignConstants.swift */,
 				12E8E7B2201396B100A60FD5 /* UserPreferences.swift */,
 				12E8E7B42013974B00A60FD5 /* GlobalConstants.swift */,
 				12E8E7B620139D2900A60FD5 /* JSONConverter.swift */,
+				12E8E7BC2014D6B600A60FD5 /* ShineLabel.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -147,6 +151,13 @@
 				12E8E78C2012D79200A60FD5 /* AppDelegate.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		12E8E7BB2014D16600A60FD5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A404B482D34DED033B97A9C2 /* Pods */ = {
@@ -311,14 +322,15 @@
 			files = (
 				12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */,
 				12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */,
+				12E8E7BD2014D6B600A60FD5 /* ShineLabel.swift in Sources */,
 				12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */,
 				12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */,
 				12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */,
 				12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */,
 				12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */,
 				12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */,
-				12E8E7AF20136A2F00A60FD5 /* StandardColors.swift in Sources */,
-				12E8E7A72012E5A000A60FD5 /* Constants.swift in Sources */,
+				12E8E7AF20136A2F00A60FD5 /* DesignConstants.swift in Sources */,
+				12E8E7A72012E5A000A60FD5 /* TextConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
