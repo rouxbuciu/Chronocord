@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  Chronocord
 //
 //  Created by roux g. buciu on 2018-01-19.
@@ -9,7 +9,11 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController {
+class LoginVC: UIViewController {
+    
+    // MARK: - Outlets
+    @IBOutlet weak var icon: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +32,9 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: - Private methods
 
 
 }

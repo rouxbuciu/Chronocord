@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E78C2012D79200A60FD5 /* AppDelegate.swift */; };
-		12E8E78F2012D79200A60FD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E78E2012D79200A60FD5 /* ViewController.swift */; };
+		12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E78E2012D79200A60FD5 /* LoginVC.swift */; };
 		12E8E7922012D79200A60FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7902012D79200A60FD5 /* Main.storyboard */; };
 		12E8E7942012D79200A60FD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7932012D79200A60FD5 /* Assets.xcassets */; };
 		12E8E7972012D79200A60FD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7952012D79200A60FD5 /* LaunchScreen.storyboard */; };
@@ -28,7 +28,7 @@
 		0566934DA26DF015292FCB12 /* Pods-Chronocord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chronocord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chronocord/Pods-Chronocord.debug.xcconfig"; sourceTree = "<group>"; };
 		12E8E7892012D79200A60FD5 /* Chronocord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronocord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E8E78C2012D79200A60FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12E8E78E2012D79200A60FD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		12E8E78E2012D79200A60FD5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		12E8E7912012D79200A60FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12E8E7932012D79200A60FD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E8E7962012D79200A60FD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 		12E8E7A02012D97A00A60FD5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12E8E78E2012D79200A60FD5 /* ViewController.swift */,
+				12E8E78E2012D79200A60FD5 /* LoginVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 				12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */,
 				12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */,
 				12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */,
-				12E8E78F2012D79200A60FD5 /* ViewController.swift in Sources */,
+				12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */,
 				12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */,
 				12E8E7AF20136A2F00A60FD5 /* StandardColors.swift in Sources */,
 				12E8E7A72012E5A000A60FD5 /* Constants.swift in Sources */,
