@@ -13,37 +13,41 @@ import UIKit
 struct StandardColours {
     
     // Main UI colours.
-    static let primaryGrey          = UIColor(hex: 0x424242)
-    static let lightGrey            = UIColor(hex: 0x6d6d6d)
-    static let darkGrey             = UIColor(hex: 0x1b1b1b)
-    
-    static let primaryTeal          = UIColor(hex: 0x80cbc4)
-    static let lightTeal            = UIColor(hex: 0xb2fef7)
-    static let darkTeal             = UIColor(hex: 0x4f9a94)
-    
-    static let accentLightBeige     = UIColor(hex: 0xDEE0D6)
-    static let accentBeige          = UIColor(hex: 0xBCA590)
-    static let accentOrange         = UIColor(hex: 0xD16F54)
+    struct UI {
+        static let primaryGrey          = UIColor(hex: 0x424242)
+        static let lightGrey            = UIColor(hex: 0x6d6d6d)
+        static let darkGrey             = UIColor(hex: 0x1b1b1b)
+        
+        static let primaryTeal          = UIColor(hex: 0x80cbc4)
+        static let lightTeal            = UIColor(hex: 0xb2fef7)
+        static let darkTeal             = UIColor(hex: 0x4f9a94)
+        
+        static let accentLightBeige     = UIColor(hex: 0xDEE0D6)
+        static let accentBeige          = UIColor(hex: 0xBCA590)
+        static let accentOrange         = UIColor(hex: 0xD16F54)
+    }
     
     
     // Activity colours.
-    static let chores               = UIColor(hex: 0x4f9a94)
-    static let downtime             = UIColor(hex: 0x4f9a94)
-    static let exercise             = UIColor(hex: 0x4f9a94)
-    static let family               = UIColor(hex: 0x4f9a94)
-    static let food                 = UIColor(hex: 0x4f9a94)
-    static let healthcare           = UIColor(hex: 0x4f9a94)
-    static let hobby                = UIColor(hex: 0x4f9a94)
-    static let learning             = UIColor(hex: 0x4f9a94)
-    static let play                 = UIColor(hex: 0x4f9a94)
-    static let productive           = UIColor(hex: 0x4f9a94)
-    static let romantic             = UIColor(hex: 0x4f9a94)
-    static let shopping             = UIColor(hex: 0x4f9a94)
-    static let sleep                = UIColor(hex: 0x4f9a94)
-    static let social               = UIColor(hex: 0x4f9a94)
-    static let travel               = UIColor(hex: 0x4f9a94)
-    static let wasted               = UIColor(hex: 0x4f9a94)
-    static let work                 = UIColor(hex: 0x4f9a94)
+    struct Activity {
+        static let chores               = UIColor(hex: 0x4f9a94)
+        static let downtime             = UIColor(hex: 0x4f9a94)
+        static let exercise             = UIColor(hex: 0x4f9a94)
+        static let family               = UIColor(hex: 0x4f9a94)
+        static let food                 = UIColor(hex: 0x4f9a94)
+        static let healthcare           = UIColor(hex: 0x4f9a94)
+        static let hobby                = UIColor(hex: 0x4f9a94)
+        static let learning             = UIColor(hex: 0x4f9a94)
+        static let play                 = UIColor(hex: 0x4f9a94)
+        static let productive           = UIColor(hex: 0x4f9a94)
+        static let romantic             = UIColor(hex: 0x4f9a94)
+        static let shopping             = UIColor(hex: 0x4f9a94)
+        static let sleep                = UIColor(hex: 0x4f9a94)
+        static let social               = UIColor(hex: 0x4f9a94)
+        static let travel               = UIColor(hex: 0x4f9a94)
+        static let wasted               = UIColor(hex: 0x4f9a94)
+        static let work                 = UIColor(hex: 0x4f9a94)
+    }
 }
 
 

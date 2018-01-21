@@ -35,6 +35,7 @@ struct Constants {
         static let sleep                    = NSLocalizedString("Sleep", comment: "")
         static let social                   = NSLocalizedString("Social", comment: "")
         static let travel                   = NSLocalizedString("Travel", comment: "")
+        static let untracked                = NSLocalizedString("", comment: "")
         static let wasted                   = NSLocalizedString("Wasted", comment: "")
         static let work                     = NSLocalizedString("Work", comment: "")
     }
