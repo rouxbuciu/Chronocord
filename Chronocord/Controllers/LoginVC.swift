@@ -15,7 +15,14 @@ class LoginVC: UIViewController {
     
     @IBOutlet weak var icon: UIImageView!
     @IBOutlet weak var facebookButton: UIButton!
-    @IBOutlet weak var disclaimerLabel: UILabel!
+    
+    @IBOutlet weak var disclaimerButton: UIButton!
+    @IBOutlet weak var disclaimerLabel: UnderlinedLabel!
+    @IBOutlet weak var disclaimerDismissOutside: UIButton!
+    @IBOutlet weak var disclaimerDismissInside: UIButton!
+    @IBOutlet weak var disclaimerView: UIView!
+    @IBOutlet weak var disclaimerTitle: UILabel!
+    @IBOutlet weak var disclaimerText: UILabel!
     
     
     // MARK: - Variables
@@ -31,6 +38,7 @@ class LoginVC: UIViewController {
 //                           parameters: nil)
         setUpAppTitleLabel()
         setUpFacebookButton()
+        setUpDisclaimerElements()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +62,22 @@ class LoginVC: UIViewController {
     }
     
     
-    // MARK: - Private methods
+    // MARK: - Button Actions
+    
+    @IBAction func facebookButtonTapped(_ sender: Any) {
+    }
+
+    @IBAction func showDisclaimerButtonTapped(_ sender: Any) {
+        showDisclaimerElementsAnimation()
+    }
+    
+    @IBAction func hideDisclaimerButtonTapped(_ sender: Any) {
+        hideDisclaimerElementsAnimation()
+    }
+    
+    
+    
+    // MARK: - View setup
     
     private func setUpAppTitleLabel() {
         appTitle = ShineLabel(frame: CGRect(x: 0,
@@ -72,19 +95,45 @@ class LoginVC: UIViewController {
     }
     
     private func setUpFacebookButton() {
-        facebookButton.layer.cornerRadius = 10.0
+        facebookButton.layer.cornerRadius = 20.0
         facebookButton.setTitle(TextConstants.loginViewText.facebookButton, for: .normal)
         facebookButton.backgroundColor = DesignConstants.Colours.UI.facebookBlue
+    }
+    
+    private func setUpDisclaimerElements() {
+        disclaimerLabel.text = TextConstants.loginViewText.disclaimerLabel
+        disclaimerLabel.textAlignment = .center
+        disclaimerLabel.textColor = UIColor.white
+        disclaimerLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        
+        disclaimerDismissOutside.backgroundColor = DesignConstants.Colours.UI.darkGrey
+        disclaimerDismissOutside.alpha = 0.0
+        
+        disclaimerTitle.text = TextConstants.loginViewText.disclaimerTitle
+        disclaimerTitle.textAlignment = .center
+        disclaimerTitle.textColor = UIColor.white
+        disclaimerTitle.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        
+        disclaimerText.text = TextConstants.loginViewText.disclaimerText
+        disclaimerText.textAlignment = .center
+        disclaimerText.textColor = UIColor.white
+        disclaimerText.numberOfLines = 0
+        disclaimerText.font = UIFont.systemFont(ofSize: 13)
+        
+        disclaimerView.backgroundColor = DesignConstants.Colours.UI.primaryGrey
+        disclaimerView.layer.cornerRadius = 20.0
     }
     
     private func prepareUIForAnimations() {
         icon.alpha = 1.0
     }
+    
+    
+    // MARK: - Intro animations
 
     private func introAnimation() {
         hideIconAnimation()
         showTitleAnimation()
-        showTextElementsAnimation()
     }
     
     private func hideIconAnimation() {
@@ -94,7 +143,7 @@ class LoginVC: UIViewController {
     }
     
     private func showTitleAnimation() {
-        appTitle.shineDuration = 3.0
+        appTitle.shineDuration = 2.5
         appTitle.shineWithCompletion {
             self.raiseTitleAnimation()
             self.showButtonAnimation()
@@ -103,27 +152,41 @@ class LoginVC: UIViewController {
     
     private func raiseTitleAnimation() {
         let heightAdjustment: CGFloat = 100
-        UIView.animate(withDuration: 2.0, delay: 0.0, animations: {
+        UIView.animate(withDuration: 1.0, delay: 0.0, animations: {
             self.icon.center.y -= heightAdjustment
         })
         
-        UIView.animate(withDuration: 2.0, delay: 0.2, animations: {
-            self.appTitle.center.y -= heightAdjustment - 20
+        UIView.animate(withDuration: 1.0, delay: 0.2, animations: {
+            self.appTitle.center.y -= heightAdjustment - 17
         })
     }
     
     private func showButtonAnimation() {
-        UIView.animate(withDuration: 1.0,
+        UIView.animate(withDuration: 0.5,
                        delay: 0.2,
                        options: [.curveEaseOut],
                        animations: {
             self.facebookButton.center.y -= CGFloat(integerLiteral: 200)
+            self.disclaimerLabel.center.y -= CGFloat(integerLiteral: 200)
+            self.disclaimerButton.center.y -= CGFloat(integerLiteral: 200)
         })
     }
     
-    private func showTextElementsAnimation() {
-        
+    
+    // MARK: - Disclaimer animations
+    
+    private func showDisclaimerElementsAnimation() {
+        UIView.animate(withDuration: 0.2) {
+            self.disclaimerDismissOutside.alpha = 0.4
+            self.disclaimerView.center.y -= CGFloat(integerLiteral: 325)
+        }
     }
 
+    private func hideDisclaimerElementsAnimation() {
+        UIView.animate(withDuration: 0.2) {
+            self.disclaimerDismissOutside.alpha = 0.0
+            self.disclaimerView.center.y += CGFloat(integerLiteral: 325)
+        }
+    }
 }
 
