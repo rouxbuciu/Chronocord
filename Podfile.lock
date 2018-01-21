@@ -45,6 +45,7 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftyJSON (4.0.0)
   - YALSideMenu (2.0.1)
 
 DEPENDENCIES:
@@ -52,6 +53,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - SwiftyJSON
   - YALSideMenu (~> 2.0)
 
 SPEC CHECKSUMS:
@@ -66,8 +68,9 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: ebaa1f79a5366922c1735f1566901f50beba23b7
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
   YALSideMenu: 4d6b90ea44dcdded18a99e46b676e4ad51d9c6bb
 
-PODFILE CHECKSUM: 1db9b3d38baa48faff2a4eaa85be5e411345ed69
+PODFILE CHECKSUM: b4dbdd6c426777bb13c448ef4484860d2ac07407
 
 COCOAPODS: 1.4.0

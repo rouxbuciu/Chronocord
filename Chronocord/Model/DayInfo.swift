@@ -9,12 +9,12 @@
 import Foundation
 
 enum DayQuality {
+    case Untracked
     case ReallyBad
     case Meh
     case Neutral
     case Okay
     case Fantastic
-    case Untracked
 }
 
 struct DayInfo {
