@@ -182,10 +182,10 @@ class LoginVC: UIViewController {
     // MARK: - Disclaimer animations
     
     private func showDisclaimerElementsAnimation() {
-        UIView.animate(withDuration: 0.2) {
+        UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.6, options: [], animations: {
             self.disclaimerDismissOutside.alpha = 0.4
             self.disclaimerView.center.y -= CGFloat(integerLiteral: 325)
-        }
+        }, completion: nil)
     }
 
     private func hideDisclaimerElementsAnimation() {

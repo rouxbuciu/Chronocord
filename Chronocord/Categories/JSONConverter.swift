@@ -12,14 +12,22 @@ import Foundation
 //
 //{
 //    "userID": {
-//        "2018-20-01" : {
-//            "weight": 213,
-//            "calories in": 2139,
-//            "calories out": 2309,
-//            "day quality": 4,
-//            "timeChunkID": {.....}
-//        }
+//        "dayInfo": {
+//            "2018-20-01" : {
+//                "dayID": 2018003
+//                "weight": 213,
+//                "calories in": 2139,
+//                "calories out": 2309,
+//                "day quality": 4,
+//            }, {.....}
+//        },
+//        "dayID": {
+//            "2018003": {
+//                "201800301": {
+//                    "daysegment": 01,
+//                    "activity": "Hobby"
+//                }
+//            }
 //    },
 //    "anotherUserID": {...}
 //}
-

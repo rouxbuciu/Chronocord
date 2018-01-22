@@ -111,4 +111,11 @@ struct DayInfo {
     public mutating func updateDayQuality(to dayQuality: DayQuality) {
         self._dayQuality = dayQuality
     }
+    
+    public func getDayID() -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyyMMdd"
+        return formatter.string(from: date)
+    }
 }

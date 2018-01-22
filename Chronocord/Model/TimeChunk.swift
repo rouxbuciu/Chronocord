@@ -13,7 +13,6 @@ struct TimeChunk {
     // MARK: - Private variables
     
     private let _daySegment:            Int
-    private var _time:                  String!
     private var _activity:              Activity
     
     
@@ -23,7 +22,7 @@ struct TimeChunk {
         get { return _daySegment }
     }
     public var humanTime: String {
-        get { return _time }
+        get { return getHumanTime() }
     }
     public var activity: Activity {
         get { return _activity }
@@ -35,7 +34,6 @@ struct TimeChunk {
     init(daySegment: Int) {
         self._daySegment    = daySegment
         self._activity      = DefaultActivities.untracked
-        self._time          = getHumanTime()
     }
     
     
@@ -46,6 +44,10 @@ struct TimeChunk {
     /// - Parameter newActivity: A new Activity type.
     public mutating func updateActivity(to newActivity: Activity) {
         _activity = newActivity
+    }
+    
+    public func timechunkID(withDayID dayID: String) -> String {
+        return dayID + String(_daySegment)
     }
     
     
