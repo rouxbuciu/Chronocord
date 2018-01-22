@@ -22,11 +22,13 @@ class ShineLabel: UILabel {
     var shineDuration : CFTimeInterval = 0
     var fadeoutDuration : CFTimeInterval = 0
     var autoStart: Bool = false
+    
     var shining : Bool {
         get {
             return !(self.displaylink!.isPaused)
         }
     }
+    
     var visible : Bool {
         get {
             return (self.fadeOut == false)
@@ -93,7 +95,7 @@ class ShineLabel: UILabel {
     
     override func didMoveToWindow() {
         if (self.window != nil) && self.autoStart {
-            self.shine()
+            self.appear()
         }
     }
     
@@ -146,31 +148,34 @@ class ShineLabel: UILabel {
         return mutableAttributedString
     }
     
-    func shine() {
-        shineWithCompletion(completion: nil)
+    
+    // MARK: - Public methods
+    
+    public func appear() {
+        appearWithCompletion(completion: nil)
     }
     
-    func shineWithCompletion(completion: (() -> Void)?) {
+    public func appearWithCompletion(completion: (() -> Void)?) {
         if (!self.shining) && (self.fadeOut) {
             self.completion = completion
             fadeOut = false
-            startAnimation(duration: fadeoutDuration)
+            startAppearing(duration: fadeoutDuration)
         }
     }
     
-    func fadeout() {
-        fadeOutWithCompletion(completion: nil)
+    public func disappear() {
+        disappearWithCompletion(completion: nil)
     }
     
-    func fadeOutWithCompletion(completion: (() -> Void)?) {
+    public func disappearWithCompletion(completion: (() -> Void)?) {
         if (!self.shining) && (!self.fadeOut) {
             self.completion = completion
             fadeOut = true
-            startAnimation(duration: fadeoutDuration)
+            startAppearing(duration: fadeoutDuration)
         }
     }
     
-    func startAnimation(duration: CFTimeInterval) {
+    public func startAppearing(duration: CFTimeInterval) {
         beginTime = CACurrentMediaTime()
         endTime = beginTime + shineDuration
         displaylink!.isPaused = false

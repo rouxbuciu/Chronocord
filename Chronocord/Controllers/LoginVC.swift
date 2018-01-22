@@ -29,13 +29,12 @@ class LoginVC: UIViewController {
     
     private var appTitle: ShineLabel!
 
+    
     // MARK: - View lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        Analytics.logEvent(Constants.AnalyticEvents.Login.loginViewPresented,
-//                           parameters: nil)
+//        Analytics.logEvent(Constants.AnalyticEvents.Login.loginViewPresented, parameters: nil)
         setUpAppTitleLabel()
         setUpFacebookButton()
         setUpDisclaimerElements()
@@ -80,7 +79,6 @@ class LoginVC: UIViewController {
         hideDisclaimerElementsAnimation()
         disclaimerButton.isUserInteractionEnabled = true
     }
-    
     
     
     // MARK: - View setup
@@ -182,7 +180,12 @@ class LoginVC: UIViewController {
     // MARK: - Disclaimer animations
     
     private func showDisclaimerElementsAnimation() {
-        UIView.animate(withDuration: 0.6, delay: 0.0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.6, options: [], animations: {
+        UIView.animate(withDuration: 0.6,
+                       delay: 0.0,
+                       usingSpringWithDamping: 0.5,
+                       initialSpringVelocity: 0.6,
+                       options: [],
+                       animations: {
             self.disclaimerDismissOutside.alpha = 0.4
             self.disclaimerView.center.y -= CGFloat(integerLiteral: 325)
         }, completion: nil)
