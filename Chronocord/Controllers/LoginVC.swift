@@ -147,8 +147,8 @@ class LoginVC: UIViewController {
     }
     
     private func showTitleAnimation() {
-        appTitle.shineDuration = 2.5
-        appTitle.shineWithCompletion {
+        appTitle.shineDuration = 2
+        appTitle.appearWithCompletion {
             self.raiseTitleAnimation()
             self.showButtonAnimation()
         }
