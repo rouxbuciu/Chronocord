@@ -55,19 +55,19 @@ class Activity {
 // MARK: - Default activities
 
 class DefaultActivities {
-    static let chores           = Activity(name: Constants.ActivityNames.chores,
-                                           colour: StandardColours.Activity.chores,
+    static let chores           = Activity(name: TextConstants.ActivityNames.chores,
+                                           colour: DesignConstants.Colours.Activity.chores,
                                            category: .Chores)
-    static let downtime         = Activity(name: Constants.ActivityNames.downtime,
-                                           colour: StandardColours.Activity.downtime,
+    static let downtime         = Activity(name: TextConstants.ActivityNames.downtime,
+                                           colour: DesignConstants.Colours.Activity.downtime,
                                            category: .Downtime)
-    static let exercise         = Activity(name: Constants.ActivityNames.exercise,
-                                           colour: StandardColours.Activity.exercise,
+    static let exercise         = Activity(name: TextConstants.ActivityNames.exercise,
+                                           colour: DesignConstants.Colours.Activity.exercise,
                                            category: .Exercise)
-    static let sleep            = Activity(name: Constants.ActivityNames.sleep,
-                                           colour: StandardColours.Activity.sleep,
+    static let sleep            = Activity(name: TextConstants.ActivityNames.sleep,
+                                           colour: DesignConstants.Colours.Activity.sleep,
                                            category: .Sleep)
-    static let untracked        = Activity(name: Constants.ActivityNames.untracked,
-                                           colour: StandardColours.UI.primaryGrey,
+    static let untracked        = Activity(name: TextConstants.ActivityNames.untracked,
+                                           colour: DesignConstants.Colours.UI.primaryGrey,
                                            category: .Untracked)
 }
