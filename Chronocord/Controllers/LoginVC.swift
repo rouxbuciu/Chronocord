@@ -64,6 +64,9 @@ class LoginVC: UIViewController {
     // MARK: - Button Actions
     
     @IBAction func facebookButtonTapped(_ sender: Any) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "Main") as! MainVC
+        self.present(vc, animated: true, completion: nil)
     }
 
     @IBAction func showDisclaimerButtonTapped(_ sender: Any) {

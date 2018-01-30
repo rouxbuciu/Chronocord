@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1217546F2021069900D1E846 /* AnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1217546E2021069900D1E846 /* AnimationDelegate.swift */; };
+		12175471202106BD00D1E846 /* CircularRevealAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12175470202106BD00D1E846 /* CircularRevealAnimator.swift */; };
+		12175473202106DB00D1E846 /* CircularRevealTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12175472202106DB00D1E846 /* CircularRevealTransitionAnimator.swift */; };
+		12175475202109CF00D1E846 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12175474202109CF00D1E846 /* MenuViewController.swift */; };
+		121754772021209000D1E846 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121754762021209000D1E846 /* MainVC.swift */; };
+		1244620220212771000E67C0 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244620120212771000E67C0 /* UITableViewCellExtension.swift */; };
+		1244620520212871000E67C0 /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244620320212871000E67C0 /* TodayVC.swift */; };
+		1244620620212871000E67C0 /* TodayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1244620420212871000E67C0 /* TodayVC.xib */; };
+		1244620920212884000E67C0 /* ActivitiesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244620720212884000E67C0 /* ActivitiesVC.swift */; };
+		1244620A20212884000E67C0 /* ActivitiesVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1244620820212884000E67C0 /* ActivitiesVC.xib */; };
 		12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E78C2012D79200A60FD5 /* AppDelegate.swift */; };
 		12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E8E78E2012D79200A60FD5 /* LoginVC.swift */; };
 		12E8E7922012D79200A60FD5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E8E7902012D79200A60FD5 /* Main.storyboard */; };
@@ -29,6 +39,16 @@
 
 /* Begin PBXFileReference section */
 		0566934DA26DF015292FCB12 /* Pods-Chronocord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chronocord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chronocord/Pods-Chronocord.debug.xcconfig"; sourceTree = "<group>"; };
+		1217546E2021069900D1E846 /* AnimationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationDelegate.swift; sourceTree = "<group>"; };
+		12175470202106BD00D1E846 /* CircularRevealAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRevealAnimator.swift; sourceTree = "<group>"; };
+		12175472202106DB00D1E846 /* CircularRevealTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRevealTransitionAnimator.swift; sourceTree = "<group>"; };
+		12175474202109CF00D1E846 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		121754762021209000D1E846 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		1244620120212771000E67C0 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
+		1244620320212871000E67C0 /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
+		1244620420212871000E67C0 /* TodayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayVC.xib; sourceTree = "<group>"; };
+		1244620720212884000E67C0 /* ActivitiesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesVC.swift; sourceTree = "<group>"; };
+		1244620820212884000E67C0 /* ActivitiesVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ActivitiesVC.xib; sourceTree = "<group>"; };
 		12E8E7892012D79200A60FD5 /* Chronocord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chronocord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E8E78C2012D79200A60FD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E8E78E2012D79200A60FD5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -112,8 +132,10 @@
 		12E8E79F2012D97200A60FD5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				12E8E7902012D79200A60FD5 /* Main.storyboard */,
+				1244620820212884000E67C0 /* ActivitiesVC.xib */,
 				12E8E7952012D79200A60FD5 /* LaunchScreen.storyboard */,
+				12E8E7902012D79200A60FD5 /* Main.storyboard */,
+				1244620420212871000E67C0 /* TodayVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				12E8E78E2012D79200A60FD5 /* LoginVC.swift */,
+				12175474202109CF00D1E846 /* MenuViewController.swift */,
+				121754762021209000D1E846 /* MainVC.swift */,
+				1244620320212871000E67C0 /* TodayVC.swift */,
+				1244620720212884000E67C0 /* ActivitiesVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +158,10 @@
 				12E8E7B620139D2900A60FD5 /* JSONConverter.swift */,
 				12E8E7BC2014D6B600A60FD5 /* ShineLabel.swift */,
 				12E8E7BE2014F1C700A60FD5 /* UnderlinedLabel.swift */,
+				1217546E2021069900D1E846 /* AnimationDelegate.swift */,
+				12175470202106BD00D1E846 /* CircularRevealAnimator.swift */,
+				12175472202106DB00D1E846 /* CircularRevealTransitionAnimator.swift */,
+				1244620120212771000E67C0 /* UITableViewCellExtension.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -252,8 +282,10 @@
 			files = (
 				12E8E7B92014328E00A60FD5 /* BEYNO.otf in Resources */,
 				12E8E7972012D79200A60FD5 /* LaunchScreen.storyboard in Resources */,
+				1244620A20212884000E67C0 /* ActivitiesVC.xib in Resources */,
 				12E8E7A52012E23700A60FD5 /* GoogleService-Info.plist in Resources */,
 				12E8E7942012D79200A60FD5 /* Assets.xcassets in Resources */,
+				1244620620212871000E67C0 /* TodayVC.xib in Resources */,
 				12E8E7922012D79200A60FD5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,16 +364,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */,
+				121754772021209000D1E846 /* MainVC.swift in Sources */,
 				12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */,
+				1244620220212771000E67C0 /* UITableViewCellExtension.swift in Sources */,
 				12E8E7BD2014D6B600A60FD5 /* ShineLabel.swift in Sources */,
 				12E8E7B3201396B100A60FD5 /* UserPreferences.swift in Sources */,
 				12E8E7B12013870100A60FD5 /* DayInfo.swift in Sources */,
+				1244620920212884000E67C0 /* ActivitiesVC.swift in Sources */,
 				12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */,
 				12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */,
+				12175475202109CF00D1E846 /* MenuViewController.swift in Sources */,
 				12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */,
+				12175471202106BD00D1E846 /* CircularRevealAnimator.swift in Sources */,
 				12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */,
 				12E8E7AF20136A2F00A60FD5 /* DesignConstants.swift in Sources */,
 				12E8E7BF2014F1C700A60FD5 /* UnderlinedLabel.swift in Sources */,
+				1217546F2021069900D1E846 /* AnimationDelegate.swift in Sources */,
+				1244620520212871000E67C0 /* TodayVC.swift in Sources */,
+				12175473202106DB00D1E846 /* CircularRevealTransitionAnimator.swift in Sources */,
 				12E8E7A72012E5A000A60FD5 /* TextConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
