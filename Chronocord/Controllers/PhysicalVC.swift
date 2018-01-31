@@ -1,20 +1,20 @@
 //
-//  TodayVC.swift
+//  PhysicalVC.swift
 //  Chronocord
 //
 //  Created by roux g. buciu on 2018-01-30.
 //  Copyright © 2018 roux g. buciu. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class TodayVC: UIView {
+class PhysicalVC: UIView {
     
     @IBOutlet var viewContainer: UIView!
-
     
     func xibSetup() {
-        Bundle.main.loadNibNamed("TodayVC", owner: self, options: nil)
+        Bundle.main.loadNibNamed("PhysicalVC", owner: self, options: nil)
         viewContainer.frame = self.bounds
         viewContainer.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
         self.addSubview(viewContainer)
@@ -29,5 +29,5 @@ class TodayVC: UIView {
         super.init(coder: aDecoder)!
         xibSetup()
     }
-
+    
 }

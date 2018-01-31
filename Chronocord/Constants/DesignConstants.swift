@@ -13,6 +13,7 @@ struct DesignConstants {
     
     struct UIElements {
         static let headerFont = UIFont(name: "BEYNO", size: 40)
+        static let appNavFont = UIFont(name: "BEYNO", size: 30)
     }
     /// The standard colours that the app will use for everything.
     struct Colours {

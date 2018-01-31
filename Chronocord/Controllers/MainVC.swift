@@ -11,24 +11,53 @@ import SideMenu
 
 class MainVC: UIViewController {
     
+    // MARK - Variables
+    
     fileprivate var selectedIndex = 0
     fileprivate var transitionPoint: CGPoint!
-    @IBOutlet weak var containerView: UIView!
     
     lazy fileprivate var menuAnimator : MenuTransitionAnimator! = MenuTransitionAnimator(mode: .presentation, shouldPassEventsOutsideMenu: false) { [unowned self] in
         self.dismiss(animated: true, completion: nil)
     }
-
+    
+    
+    // MARK: - Outlets
+    
+    @IBOutlet var backgroundView:           UIView!
+    @IBOutlet weak var containerView:       UIView!
+    
+    @IBOutlet weak var navBar:              UIView!
+    @IBOutlet weak var appTitle:            UILabel!
+    
+    
+    // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        initialViewSetup()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    // MARK: - Private functions
+    
+    private func initialViewSetup() {
+        appTitle.font                       = DesignConstants.UIElements.appNavFont
+        appTitle.textColor                  = DesignConstants.Colours.UI.primaryTeal
+        appTitle.textAlignment              = .center
+        
+        navBar.backgroundColor              = DesignConstants.Colours.UI.primaryGrey
+        
+        backgroundView.backgroundColor      = DesignConstants.Colours.UI.primaryGrey
+    }
+    
+    
     
     @IBAction func presentMenuPressed(_ sender: Any) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
@@ -39,18 +68,6 @@ class MainVC: UIViewController {
         menu.modalPresentationStyle = .custom
         self.present(menu, animated: true, completion: nil)
     }
-    
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -60,15 +77,58 @@ extension MainVC: MenuViewControllerDelegate {
         transitionPoint = point
         selectedIndex = index
         
-        var newView: TodayVC!
-        newView = TodayVC(frame: CGRect(x: 0,
-                                        y: 0,
-                                        width: 200,
-                                        height: 200))
-        self.containerView.addSubview(newView)
+        for view in containerView.subviews {
+            view.removeFromSuperview()
+        }
+        let view = selectViewFromIndex(selectedIndex)
+        self.containerView.addSubview(view)
+        
     
         DispatchQueue.main.async {
             self.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func selectViewFromIndex(_ index: Int) -> UIView {
+        if index == 0 {
+            var newView: TodayVC!
+            newView = TodayVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 1 {
+            var newView: ActivitiesVC!
+            newView = ActivitiesVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 2 {
+            var newView: PhysicalVC!
+            newView = PhysicalVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 3 {
+            var newView: SocialVC!
+            newView = SocialVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 4 {
+            var newView: OtherVC!
+            newView = OtherVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 5 {
+            var newView: HelpVC!
+            newView = HelpVC(frame: containerView.bounds)
+            return newView
+            
+        } else if index == 6 {
+            var newView: SettingsVC!
+            newView = SettingsVC(frame: containerView.bounds)
+            return newView
+            
+        } else {
+            var newView: TodayVC!
+            newView = TodayVC(frame: containerView.bounds)
+            return newView
         }
     }
     

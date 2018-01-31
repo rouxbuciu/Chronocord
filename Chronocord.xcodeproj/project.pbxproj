@@ -12,6 +12,16 @@
 		12175473202106DB00D1E846 /* CircularRevealTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12175472202106DB00D1E846 /* CircularRevealTransitionAnimator.swift */; };
 		12175475202109CF00D1E846 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12175474202109CF00D1E846 /* MenuViewController.swift */; };
 		121754772021209000D1E846 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121754762021209000D1E846 /* MainVC.swift */; };
+		123C94D720214A5A00172D98 /* PhysicalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C94D620214A5A00172D98 /* PhysicalVC.swift */; };
+		123C94D920214A6300172D98 /* HelpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C94D820214A6300172D98 /* HelpVC.swift */; };
+		123C94DB20214A6E00172D98 /* OtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C94DA20214A6E00172D98 /* OtherVC.swift */; };
+		123C94DD20214A7700172D98 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C94DC20214A7700172D98 /* Settings.swift */; };
+		123C94DF20214A7F00172D98 /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123C94DE20214A7F00172D98 /* Social.swift */; };
+		123C94E120214AE400172D98 /* PhysicalVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C94E020214AE400172D98 /* PhysicalVC.xib */; };
+		123C94E320214AEE00172D98 /* HelpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C94E220214AEE00172D98 /* HelpVC.xib */; };
+		123C94E520214AF400172D98 /* OtherVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C94E420214AF400172D98 /* OtherVC.xib */; };
+		123C94E720214AFA00172D98 /* SettingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C94E620214AFA00172D98 /* SettingsVC.xib */; };
+		123C94E920214B0100172D98 /* SocialVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123C94E820214B0100172D98 /* SocialVC.xib */; };
 		1244620220212771000E67C0 /* UITableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244620120212771000E67C0 /* UITableViewCellExtension.swift */; };
 		1244620520212871000E67C0 /* TodayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1244620320212871000E67C0 /* TodayVC.swift */; };
 		1244620620212871000E67C0 /* TodayVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1244620420212871000E67C0 /* TodayVC.xib */; };
@@ -44,6 +54,16 @@
 		12175472202106DB00D1E846 /* CircularRevealTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularRevealTransitionAnimator.swift; sourceTree = "<group>"; };
 		12175474202109CF00D1E846 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		121754762021209000D1E846 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		123C94D620214A5A00172D98 /* PhysicalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalVC.swift; sourceTree = "<group>"; };
+		123C94D820214A6300172D98 /* HelpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVC.swift; sourceTree = "<group>"; };
+		123C94DA20214A6E00172D98 /* OtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherVC.swift; sourceTree = "<group>"; };
+		123C94DC20214A7700172D98 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		123C94DE20214A7F00172D98 /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
+		123C94E020214AE400172D98 /* PhysicalVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhysicalVC.xib; sourceTree = "<group>"; };
+		123C94E220214AEE00172D98 /* HelpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelpVC.xib; sourceTree = "<group>"; };
+		123C94E420214AF400172D98 /* OtherVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherVC.xib; sourceTree = "<group>"; };
+		123C94E620214AFA00172D98 /* SettingsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsVC.xib; sourceTree = "<group>"; };
+		123C94E820214B0100172D98 /* SocialVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SocialVC.xib; sourceTree = "<group>"; };
 		1244620120212771000E67C0 /* UITableViewCellExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCellExtension.swift; sourceTree = "<group>"; };
 		1244620320212871000E67C0 /* TodayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayVC.swift; sourceTree = "<group>"; };
 		1244620420212871000E67C0 /* TodayVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodayVC.xib; sourceTree = "<group>"; };
@@ -136,6 +156,11 @@
 				12E8E7952012D79200A60FD5 /* LaunchScreen.storyboard */,
 				12E8E7902012D79200A60FD5 /* Main.storyboard */,
 				1244620420212871000E67C0 /* TodayVC.xib */,
+				123C94E020214AE400172D98 /* PhysicalVC.xib */,
+				123C94E220214AEE00172D98 /* HelpVC.xib */,
+				123C94E420214AF400172D98 /* OtherVC.xib */,
+				123C94E620214AFA00172D98 /* SettingsVC.xib */,
+				123C94E820214B0100172D98 /* SocialVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +173,11 @@
 				121754762021209000D1E846 /* MainVC.swift */,
 				1244620320212871000E67C0 /* TodayVC.swift */,
 				1244620720212884000E67C0 /* ActivitiesVC.swift */,
+				123C94D620214A5A00172D98 /* PhysicalVC.swift */,
+				123C94D820214A6300172D98 /* HelpVC.swift */,
+				123C94DA20214A6E00172D98 /* OtherVC.swift */,
+				123C94DC20214A7700172D98 /* Settings.swift */,
+				123C94DE20214A7F00172D98 /* Social.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -281,10 +311,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E8E7B92014328E00A60FD5 /* BEYNO.otf in Resources */,
+				123C94E920214B0100172D98 /* SocialVC.xib in Resources */,
 				12E8E7972012D79200A60FD5 /* LaunchScreen.storyboard in Resources */,
+				123C94E320214AEE00172D98 /* HelpVC.xib in Resources */,
 				1244620A20212884000E67C0 /* ActivitiesVC.xib in Resources */,
+				123C94E720214AFA00172D98 /* SettingsVC.xib in Resources */,
 				12E8E7A52012E23700A60FD5 /* GoogleService-Info.plist in Resources */,
 				12E8E7942012D79200A60FD5 /* Assets.xcassets in Resources */,
+				123C94E120214AE400172D98 /* PhysicalVC.xib in Resources */,
+				123C94E520214AF400172D98 /* OtherVC.xib in Resources */,
 				1244620620212871000E67C0 /* TodayVC.xib in Resources */,
 				12E8E7922012D79200A60FD5 /* Main.storyboard in Resources */,
 			);
@@ -363,6 +398,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				123C94D720214A5A00172D98 /* PhysicalVC.swift in Sources */,
 				12E8E7AD2013684800A60FD5 /* Activity.swift in Sources */,
 				121754772021209000D1E846 /* MainVC.swift in Sources */,
 				12E8E7B52013974B00A60FD5 /* GlobalConstants.swift in Sources */,
@@ -373,12 +409,16 @@
 				1244620920212884000E67C0 /* ActivitiesVC.swift in Sources */,
 				12E8E7B720139D2900A60FD5 /* JSONConverter.swift in Sources */,
 				12E8E7AB201367F000A60FD5 /* TimeChunk.swift in Sources */,
+				123C94D920214A6300172D98 /* HelpVC.swift in Sources */,
 				12175475202109CF00D1E846 /* MenuViewController.swift in Sources */,
 				12E8E78F2012D79200A60FD5 /* LoginVC.swift in Sources */,
 				12175471202106BD00D1E846 /* CircularRevealAnimator.swift in Sources */,
 				12E8E78D2012D79200A60FD5 /* AppDelegate.swift in Sources */,
 				12E8E7AF20136A2F00A60FD5 /* DesignConstants.swift in Sources */,
+				123C94DB20214A6E00172D98 /* OtherVC.swift in Sources */,
+				123C94DD20214A7700172D98 /* Settings.swift in Sources */,
 				12E8E7BF2014F1C700A60FD5 /* UnderlinedLabel.swift in Sources */,
+				123C94DF20214A7F00172D98 /* Social.swift in Sources */,
 				1217546F2021069900D1E846 /* AnimationDelegate.swift in Sources */,
 				1244620520212871000E67C0 /* TodayVC.swift in Sources */,
 				12175473202106DB00D1E846 /* CircularRevealTransitionAnimator.swift in Sources */,
